@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker|Quicksand&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #56736E;
+}
+
+
+
+/* konfigurasi footernya*/
+footer{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 5%;
+
+}
+
+/* konfigurasi navigation bar */
+nav {
+    padding: 5px;
+    position: fixed;
+    top: 0;
+ }
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    font-weight: bold;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header{
+    display: inline;
+}
+
+/* buat halaman index.html*/
+#tulisan1{
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: white;
+    font-size: 170%;
+    letter-spacing: 3px;
+    padding-top: 15%;
+}
+
+#tulisan2{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2em;
+    padding-left: 5%;
+}
+
+#button1{
+    padding-top: 20%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+/* konfigurasi gambar*/
+#gambarmebel{
+    width: 100%;
+    padding-top: 25%;
+}
+
+/* naruh di kiri*/
+aside{
+    float: left;
+    width: 55%;
+    padding-right: 20px;
+
+}
+
+/* naruh di kanan*/
+#content{
+    float: right;
+    width: 45%;
+}
+
+main{
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*ini buat button */
+.button {
+    background-color: #56736E;
+    border: 3px solid white;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: #56736E;
+    border: 3px solid #D5DCDB;
+    font-weight: bold;
+  }
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    #tulisan1, #tulisan2{
+        text-align: center;
+    }
+
+
+    /* halaman index.html selesai*/
+ }
+
