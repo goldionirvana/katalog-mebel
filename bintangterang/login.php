@@ -2,6 +2,24 @@
 session_start();
 require 'functions.php';
 
+// cek cookie
+if( isset($_COOKIE['id_pegawai']) && isset($_COOKIE['key']) ) {
+	$id_pegawai = $_COOKIE['id_pegawai'];
+	$key = $_COOKIE['key'];
+
+	// ambil username berdasarkan id
+	$result = mysqli_query($conn, "SELECT username FROM pegawai WHERE id_pegawai = $id_pegawai");
+	$row = mysqli_fetch_assoc($result);
+
+	// cek cookie dan username
+	if( $key === hash('sha256', $row['username']) ) {
+		$_SESSION['login'] = true;
+	}
+
+
+}
+
+
 if( isset($_SESSION["login"]) ) {
 	header("Location: index.php");
 	exit;
@@ -29,7 +47,7 @@ if( isset($_POST["login"]) ) {
 			// cek remember me
 			if( isset($_POST['remember']) ) {
 				// buat cookie
-				setcookie('id', $row['id'], time()+60);
+				setcookie('id_pegawai', $row['id_pegawai'], time()+60);
 				setcookie('key', hash('sha256', $row['username']), time()+60);
 			}
 
@@ -72,13 +90,14 @@ if( isset($_POST["login"]) ) {
 			<label for="remember">Remember me</label>
 		</li>
 		<li>
+		<a href="registrasi.php">Register</a>
+		</li>
+		<li>
 			<button type="submit" name="login">Login</button>
 		</li>
 	</ul>
 	
 </form>
-
-
 
 
 
