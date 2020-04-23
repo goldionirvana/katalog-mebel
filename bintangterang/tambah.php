@@ -67,6 +67,10 @@ if( isset($_POST["submit"]) ) {
 				<label for="ukuran">Ukuran :</label>
 				<input type="text" name="ukuran" id="ukuran" required>
 			</li>
+			<li>
+				<label for="tipe_produk">Tipe Produk :</label>
+				<input type="text" name="tipe_produk" id="tipe_produk" required>
+			</li>
             <li>
 				<label for="gambar">gambar :</label>
 				<input type="file" name="gambar" id="gambar" required>
