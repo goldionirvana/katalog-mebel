@@ -65,41 +65,63 @@ if( isset($_POST["login"]) ) {
 <html>
 <head>
 	<title>Halaman Login</title>
+
+	<link rel="stylesheet" href="style/loginstyle.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
 
-<h1>Halaman Login</h1>
+
 
 <?php if( isset($error) ) : ?>
-	<p style="color: red; font-style: italic;">username / password salah</p>
+	<p style="color: red; font-style: italic; background-color: #f1f1f1; padding: 20px">username / password salah</p>
 <?php endif; ?>
 
-<form action="" method="post">
+<form action="" method="post" class="login-form">
 
-	<ul>
-		<li>
-			<label for="username">Username :</label>
-			<input type="text" name="username" id="username">
-		</li>
-		<li>
-			<label for="password">Password :</label>
-			<input type="password" name="password" id="password">
-		</li>
-		<li>
-			<input type="checkbox" name="remember" id="remember">
+<h1>Login</h1>
+
+	<div class="txtb">
+		<input type="text" name="username" id="username">
+		<span data-placeholder="Username"></span>
+	</div>
+
+	<div class="txtb">
+		<input type="password" name="password" id="password">
+		<span data-placeholder="Password"></span>
+	</div>
+
+
+	<input type="checkbox" name="remember" id="remember">
 			<label for="remember">Remember me</label>
-		</li>
-		<li>
-		<a href="registrasi.php">Register</a>
-		</li>
-		<li>
-			<button type="submit" name="login">Login</button>
-		</li>
-	</ul>
+
+
+	<input type="submit" class="logbtn" value="login" name="login">
+
+
+
+
+	<div class="bottom-text">
+	Belum punya akun?	<a href="registrasi.php">Register</a>
+	</div>
+	
+
+
+
 	
 </form>
 
+	<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
 
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
 
 
 
