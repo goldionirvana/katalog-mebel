@@ -18,6 +18,7 @@ if( isset($_POST["register"]) ) {
 <html>
 <head>
 	<title>Halaman Registrasi</title>
+	<link rel="stylesheet" href="style/styleregistrasi.css">
 	<style>
 		label {
 			display: block;
@@ -26,39 +27,45 @@ if( isset($_POST["register"]) ) {
 </head>
 <body>
 
-<h1>Halaman Registrasi</h1>
+
 
 <form action="" method="post">
 
-	<ul>
-		<li>
-			<label for="nama_pegawai">Nama :</label>
-			<input type="text" name="nama_pegawai" id="nama_pegawai">
-		</li>
-		<li>
-			<label for="username">username :</label>
-			<input type="text" name="username" id="username">
-		</li>
-        <li>
-			<label for="email">Email :</label>
-			<input type="text" name="email" id="email">
-		</li>
-        <li>
-			<label for="tgllahir">Tanggal Lahir :</label>
-			<input type="text" name="tgllahir" id="tgllahir">
-		</li>
-		<li>
-			<label for="password">password :</label>
-			<input type="password" name="password" id="password">
-		</li>
-		<li>
-			<label for="password2">konfirmasi password :</label>
-			<input type="password" name="password2" id="password2">
-		</li>
-		<li>
-			<button type="submit" name="register">Register!</button>
-		</li>
-	</ul>
+	<div class="container">
+		<div class="title">create an account</div>
+		<div class="sub-container">
+		<div class="form">
+      		<label for="nama_pegawai" class="label">Nama Pegawai :</label><br>
+      		<input type="text" class="input" placeholder="tuliskan nama anda" name ="nama_pegawai" id="nama_pegawai">
+   		 </div>
+			
+		<div class="form">
+      		<label for="username" class="label">Username :</label><br>
+      		<input type="text" class="input" placeholder="tuliskan Username anda" name ="username" id="username">
+		</div>
+			
+		<div class="form">
+      		<label for="email" class="label">Email :</label><br>
+      		<input type="email" class="input" placeholder="Tuliskan email anda" name ="email" id="email">
+   		</div>
+		   <div class="form">
+      		<label for="tgllahir" class="label">Tanggal Lahir :</label><br>
+      		<input type="date" class="input" placeholder="Tuliskan email anda" name ="tgllahir" id="tgllahir">
+		</div>
+		<div class="form">
+      		<label for="password" class="label">Password :</label><br>
+      		<input type="password" class="input" placeholder="tuliskan password anda" name="password" id="password">
+		</div>  
+		<div class="form">
+      		<label for="password2" class="label">Password :</label><br>
+      		<input type="password" class="input" placeholder="tuliskan kembali password anda" name="password2" id="password2">
+    	</div> 
+
+			<button class="btn" type="submit" name="register">Register!</button>
+		
+
+	</div>
+</div>
 	
 </form>
 
