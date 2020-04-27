@@ -35,51 +35,58 @@ if( isset($_POST["submit"]) ) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<link rel="stylesheet" href="style/styleregistrasi.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INPUT PRODUK</title>
 </head>
 <body>
-<h1>Tambah data Mebel</h1>
+
 
 <form action="" method="post" enctype="multipart/form-data">
-		<ul>
-			<li>
-				<label for="nama">nama : </label>
-				<input type="text" name="nama" id="nama" required>
-			</li>
-			<li>
-				<label for="deskripsi">Deskripsi : </label>
-				<input type="text" name="deskripsi" id="deskripsi" required>
-			</li>
-			<li>
-				<label for="harga">Harga :</label>
-				<input type="text" name="harga" id="harga" required>
-			</li>
-			<li>
-				<label for="bahan">bahan :</label>
-				<input type="text" name="bahan" id="bahan" required>
-			</li>
-            <li>
-				<label for="warna">Warna :</label>
-				<input type="text" name="warna" id="warna" required>
-			</li>
-            <li>
-				<label for="ukuran">Ukuran :</label>
-				<input type="text" name="ukuran" id="ukuran" required>
-			</li>
-			<li>
-				<label for="tipe_produk">Tipe Produk :</label>
-				<input type="text" name="tipe_produk" id="tipe_produk" required>
-			</li>
-            <li>
-				<label for="gambar">gambar :</label>
-				<input type="file" name="gambar" id="gambar" required>
-			</li>
-			<li>
-				<button type="submit" name="submit">Tambah Data!</button>
-			</li>
+<div class="container">
+		<div class="title">Input Produk</div>
+		<div class="sub-container">
+		<div class="form">
+      		<label for="nama" class="label">Nama Produk :</label><br>
+      		<input type="text" class="input" placeholder="tuliskan nama produk" name ="nama" id="nama"required>
+   		 </div>
+			<div class="form">
+      		<label for="deskripsi" class="label">Deskripsi Produk :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan Deskripsi produk" name ="deskripsi" id="deskripsi"required>
+   		 </div>
+			
+			<div class="form">
+      		<label for="harga" class="label">Harga Produk :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan harga produk yang ingin dijual" name ="harga" id="harga"required>
+   		 </div>
+			<div class="form">
+      		<label for="bahan" class="label">Terbuat dari bahan :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan jenis bahan kayu apa yang digunakan" name ="bahan" id="bahan"required>
+   		 </div>
+			<div class="form">
+      		<label for="warna" class="label">warna Produk :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan warna produk" name ="warna" id="warna"required>
+   		 </div>
+			<div class="form">
+      		<label for="ukuran" class="label">Ukuran Produk :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan ukuran produk yang ingin dijual" name ="ukuran" id="ukuran"required>
+   		 </div>
+			<div class="form">
+      		<label for="type_produk" class="label">Type Produk :</label><br>
+      		<input type="text" class="input" placeholder="Tuliskan type produk yang ingin dijual" name ="type_produk" id="type_produk"required>
+   		 </div>
+			<div class="form">
+      		<label for="gambar" class="label">Gambar Produk :</label><br>
+      		<input type="file"   name ="gambar" id="gambar"required>
+   		 </div>
+			
+			
+			<button class="btn" type="submit" name="submit">Tambah data!</button>
+				
+			
 		</ul>
-
+		</div>
+</div>
 	</form>
 
     
