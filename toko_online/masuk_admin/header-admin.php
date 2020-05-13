@@ -7,12 +7,14 @@ include "../web_config_vars.php";
 // *** DB CONNECTION
 include "../db_conn.php";
 ?>
-
+<head>
+   
 <link rel="shortcut icon" href="favicon.ico" >
 <link href="style_admin.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="lib/ckeditor/ckeditor.js"></script>
 <script src="plugin/nicEdit.js" type="text/javascript"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 
 
 </head>
@@ -43,22 +45,39 @@ if (!empty($_POST['username'])){
 if (empty($_SESSION['islogin'])){
 ?>
 
-<center>
-
-<div id="login">
-<div id="login_input">
 
 <center>
-<img src="../images/mapan.png"><br>
-<form method="post">
 
-<input class="teksbok_admin" placeholder="Input Username" type="text" name="username" maxlength="12"><br>
-<input class="teksbok_admin" placeholder="Type Your Password" type="password" name="password"><br><br>
-<input class="tombol_login" type="submit" value="LOGIN">
+<h1>Login</h1>
 
-</form>
+<form method="post" class="login-form">
+<img src="../images/mapan.jpg" width=70%;><br>
+
+
+
+<div class="txtb">
+   <input  placeholder="Input Username" type="text" name="username" maxlength="12"><br>
+</div>
+<div class="txtb">
+   <input  placeholder="Type Your Password" type="password" name="password"><br><br>
 </div>
 
+
+<input class="logbtn" type="submit" value="LOGIN">
+
+</form>
+
+<script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
 
 </center>
 
@@ -94,6 +113,7 @@ echo "<center>Halaman Administrator </center>";
 }
 
 ?>
+
 
 
 
