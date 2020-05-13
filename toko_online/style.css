@@ -20,7 +20,7 @@ body {
 }
 #header{
 
-     background:#fff no-repeat top left;
+     background:#56736E no-repeat top left;
 	 height:80px;
 	 width:100%;
      border-bottom:3px solid #660d0d;
@@ -247,7 +247,7 @@ margin-top:1224px;
     border:1px solid #ccc;
     padding:4px;
     margin-bottom:6px;
-	argin-top:6px;
+	margin-top:6px;
      }
 
 #checkout_fisrt td {
@@ -307,7 +307,7 @@ src: url('GhostWriter.ttf');
 /* start cari style*/
 
 #form_cari {
-   float;right;
+   float : right;
    
     }
     
@@ -411,13 +411,13 @@ src: url('GhostWriter.ttf');
     float:left;
 	margin-left:3px;
    }
-}
+
 .nama_barang{color:#444; text-transform: uppercase; font-weight:bold;}
 .harga_barang{color:#444;}
 .deskripsi_barang{padding:6px;}
 .barang{
     position:relative;
-    over-flow:hidden;
+    overflow:hidden;
     display:block;
     width:220px;
     height:auto;
@@ -522,7 +522,7 @@ src: url('GhostWriter.ttf');
 
 h2 {
     border-top:2px #ccc solid;
-    margin:0px 0 2px; 0;
+    margin:0px 0 2px 0;
     background:#444;
     padding:8px;
 	font-size: 1.5em;
@@ -531,7 +531,7 @@ h2 {
 }
 #hightlight2{
     border-top:2px #ccc solid;
-    margin:0px 0 2px; 0;
+    margin:0px 0 2px 0;
     background:#444;
     padding:8px;
 	font-size: 1.5em;
@@ -542,7 +542,7 @@ h2 {
 
 #hightlight{
     border-top:2px #ccc solid;
-    margin:0px 0 2px; 0;
+    margin:0px 0 2px 0;
     background:#6b8580;
     padding:8px;
 	font-size: 1.5em;
@@ -712,9 +712,9 @@ h2 {
 #texbox{
     height:23px;
 
-    border:1px #cc solid;
+    border:1px cc solid;
    
-    border-radius:2px;
+    border-radius: 2px;
     text-align:center;
 
 }
@@ -824,7 +824,7 @@ h6 {
     text-align:left;
     height:auto;
     width:98%;
-    background:#transparent;
+    background:transparent;
     border:1px solid #ccc;
     border-bottom:3px solid #ccc;
 
@@ -840,7 +840,7 @@ h6 {
     text-align:left;
     height:auto;
     width:98%;
-    background:#transparent;
+    background:transparent;
     border:1px solid #ccc;
     border-bottom:3px solid #ccc;
 
