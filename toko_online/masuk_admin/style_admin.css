@@ -151,8 +151,8 @@ body {
 
 #head_admin {
     text-align:center;
-    background:#fff url(../images/logo.png) no-repeat top left;
-    height:135px;
+    background:#fff url(../images/mapan.png) no-repeat top left;
+    height:145px;
     border-bottom:3px #fff solid;
     color:#fff;
 
@@ -247,4 +247,3 @@ h2{
 
 
 /* end admin style*/
-
