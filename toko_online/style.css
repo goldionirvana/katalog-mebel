@@ -20,7 +20,7 @@ body {
 }
 #header{
 
-     background:#56736E no-repeat top left;
+     background:#56736e no-repeat top left;
 	 height:80px;
 	 width:100%;
      border-bottom:3px solid #660d0d;
@@ -307,7 +307,7 @@ src: url('GhostWriter.ttf');
 /* start cari style*/
 
 #form_cari {
-   float : right;
+   float:right;
    
     }
     
@@ -418,7 +418,7 @@ src: url('GhostWriter.ttf');
 .barang{
     position:relative;
     overflow:hidden;
-    display:block;
+    display:block; 
     width:220px;
     height:auto;
     border:1px solid #ccc;
@@ -522,7 +522,7 @@ src: url('GhostWriter.ttf');
 
 h2 {
     border-top:2px #ccc solid;
-    margin:0px 0 2px 0;
+    margin:0px 0 2px; ;
     background:#444;
     padding:8px;
 	font-size: 1.5em;
@@ -531,7 +531,7 @@ h2 {
 }
 #hightlight2{
     border-top:2px #ccc solid;
-    margin:0px 0 2px 0;
+    margin:0px 0 2px; ;
     background:#444;
     padding:8px;
 	font-size: 1.5em;
@@ -542,7 +542,7 @@ h2 {
 
 #hightlight{
     border-top:2px #ccc solid;
-    margin:0px 0 2px 0;
+    margin:0px 0 2px; ;
     background:#6b8580;
     padding:8px;
 	font-size: 1.5em;
@@ -714,7 +714,7 @@ h2 {
 
     border:1px cc solid;
    
-    border-radius: 2px;
+    border-radius:2px;
     text-align:center;
 
 }
